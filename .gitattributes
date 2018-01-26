@@ -2,4 +2,4 @@
 * text=auto
 
 # Prevents from setting HTML as repository language
-assets/* linguist-vendored
+assets/* linguist-vendored=true
