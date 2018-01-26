@@ -1,5 +1,2 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
-
-# Prevents from setting HTML as repository language
-assets/* linguist-vendored=true
