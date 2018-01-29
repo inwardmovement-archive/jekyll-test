@@ -10,7 +10,7 @@ I may move to Jekyll/GitHub when the following conditions are fulfilled:
 ](https://github.com/sverrirs/jekyll-paginate-v2)) ;
 - the above elements are compatible with GitHub Pages integration.
 
-I hope these conditions will be fulfilled some day. For now I will stick to WordPress.
+I hope these conditions will be fulfilled some day.
 
 ---
 
