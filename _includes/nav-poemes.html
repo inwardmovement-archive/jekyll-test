@@ -1,8 +1,8 @@
 <aside class="sidebar">
     <nav aria-label="Poems pagination">
       <ul class="pagination">
-        {% if page.recueil %}
-          {% for post in site.categories.[include.category] reversed offset:2 %}
+        {% if layout.recueil %}
+          {% for post in site.categories.[include.nomrecueil] reversed offset:2 %}
             <div style="height: 38px;"><li class="page-item"><a class="page-link" href="{{ post.url }}">commencer la lecture</a></li></div>
           {% endfor %}
         {% else %}
@@ -23,7 +23,7 @@
   <nav class="card" aria-label="Poems navigation">
     <div class="card-header">
       <ul>
-        {% for post in site.categories.[include.category] reversed %}
+        {% for post in site.categories.[include.nomrecueil] reversed %}
           <li><a class="current" href="{{ post.url }}">{{ post.title }} <span class="sr-only">(current)</span></a></li>
         {% endfor %}
       </ul>

@@ -1,14 +1,12 @@
 ---
 layout: bare
+recueil: true
 ---
 {% include nav-recueils.html %}
-
-{% capture recueil %}
-  {{ page.categories | last }}
-{% endcapture %}
+{% assign slug = page.url | split: '/' | last %}
 
 <main class="container grid-poems">
-  {% include nav-poemes.html nomrecueil=recueil %}
+  {% include nav-poemes.html nomrecueil=slug %}
   <article>
     <h2>{{ page.title }}</h2><br>
       {{ content }}
