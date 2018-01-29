@@ -5,7 +5,7 @@ I'm interested in Jekyll/GitHub native integration that allows to automatically 
 - Jekyll doesn't suit my needs out of the box. It might with some plugins, but then I loose the native integration's benefits I was interested in.
 
 I may move to Jekyll/GitHub when the following conditions are fulfilled:
-- being able to loop in posts from another page than `index.html` ;
+- being able to loop in posts from another file than `index.html` ;
 - being able to loop in posts — and paginate — within their categories (may be possible with [jekyll-paginate-v2
 ](https://github.com/sverrirs/jekyll-paginate-v2)) ;
 - the above elements are compatible with GitHub Pages integration.
