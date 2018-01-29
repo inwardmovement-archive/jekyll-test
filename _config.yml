@@ -1,10 +1,9 @@
 title: Inward Movement
 description: Victor's personal website (writer, developer, activist)
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://inwardmovement.github.io/"
 logo: /assets/avatar.png
 markdown: kramdown
-google_analytics: 
+permalink: /:categories/:title
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

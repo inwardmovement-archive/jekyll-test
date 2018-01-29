@@ -1,0 +1,32 @@
+<aside class="sidebar">
+    <nav aria-label="Poems pagination">
+      <ul class="pagination">
+        {% if page.recueil %}
+          {% for post in site.categories.[include.category] reversed offset:2 %}
+            <div style="height: 38px;"><li class="page-item"><a class="page-link" href="{{ post.url }}">commencer la lecture</a></li></div>
+          {% endfor %}
+        {% else %}
+          {% if page.previous %}
+            <li class="page-item"><a class="page-link" href="{{ page.previous.url }}">précédent</a></li>
+          {% else %}
+            <li class="page-item disabled noselect"><a class="page-link" href="{{ page.previous.url }}">précédent</a></li>
+          {% endif %}
+          {% if page.next %}
+            <li class="page-item"><a class="page-link" href="{{ page.next.url }}">suivant</a></li>
+          {% else %}
+            <li class="page-item disabled noselect"><a class="page-link" href="{{ page.next.url }}">suivant</a></li>
+          {% endif %}
+        {% endif %}
+      </ul>
+    </nav>
+
+  <nav class="card" aria-label="Poems navigation">
+    <div class="card-header">
+      <ul>
+        {% for post in site.categories.[include.category] reversed %}
+          <li><a class="current" href="{{ post.url }}">{{ post.title }} <span class="sr-only">(current)</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</aside>

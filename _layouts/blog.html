@@ -1,0 +1,21 @@
+{% include head.html %}
+{% include nav.html %}
+<main class="container">
+  <article>
+    <h2>{{ page.title }}</h2><br>
+    {{ content }}
+  </article>
+
+  <br><br>
+
+  <nav aria-label="Blog pagination">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#">précédent</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">suivant</a>
+      </li>
+    </ul>
+</main>
+{% include footer.html %}

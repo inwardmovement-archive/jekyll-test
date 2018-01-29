@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y:scroll;
+}
+
+body {
+  margin-bottom: 112px;
+  cursor: default;
+}
+
+main.container {
+  max-width: 1140px;
+  margin-bottom: 50px;
+  }
+
+@media (min-width: 576px) {
+  main.container {
+  ! max-width: none; 
+  }
+}
+
+@media (min-width: 768px) {
+  main.container {
+  ! max-width: none; 
+  }
+}
+
+@media (min-width: 992px) {
+  main.container {
+  ! max-width: none; 
+  }
+}
+
+.grid-poems {
+  display: grid;
+  grid-template:
+    "article"
+    "aside";
+}
+
+@media (min-width: 992px) {
+  .grid-poems {
+    display: grid;
+    grid-template: "aside article" / 280px 1fr;
+  }
+}
+
+.grid-apps {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-rows: repeat(auto-fill, auto);
+}
+
+@media (min-width: 768px) {
+  .grid-apps {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, 300px);
+    max-width: 1140px;
+  }
+}
+
+.navbar {
+  margin-bottom: 56px;
+}
+
+.navbar .container {
+  max-width: 1108px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav-recueils {
+  margin-bottom: 56px;
+}
+
+.nav-recueils .breadcrumb {
+   border-radius: 0px;
+   margin-bottom: 0px;
+}
+
+.nav-recueils ul {
+	 margin-top: -56px;
+   justify-content: center;
+}
+
+.nav-recueils ul li.active a {
+  color: #6c757d;
+}
+
+.nav-subtext {
+  margin-top: -40px;
+	font-size: 24px;
+  font-family: 'Caveat', cursive;
+}
+
+.nav-subtext img {
+	width: 30px;
+	padding-bottom: 10px;
+}
+
+nav.card .card-header ul {
+	list-style-type: none;
+}
+
+.sidebar {
+  grid-area: aside;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    margin-top: 5px;
+  }
+}
+
+.sidebar .pagination {
+  justify-content: center;
+}
+
+.sidebar nav  {
+  display: grid;
+}
+
+.sidebar nav.card {
+  min-width: 210px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.sidebar nav.card ul {
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.sidebar nav .card-header {
+  border-bottom: none;
+}
+
+.sidebar .current {
+	border-bottom: 1px dotted;
+}
+
+article {
+  grid-area: article;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  article {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.grid-poems article  {
+  margin-left: 100px;
+}
+
+.grid-poems article p {
+  margin-bottom: 1.25em;
+}
+
+article.home {
+  text-align: center;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  article.home {
+    padding-top: 100px;
+  }
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+.blockquote {
+  font-size: inherit;
+}
+
+.blockquote-footer {
+  font-size: inherit;
+}
+
+.grid-poems blockquote, .grid-poems .blockquote-footer {
+  text-align: right !important;
+  font-style: italic;
+}
+
+.grid-poems .blockquote-footer {
+  font-style: normal;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  
+}
+
+.footer a {
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}

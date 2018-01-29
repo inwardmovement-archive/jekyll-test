@@ -1,0 +1,7 @@
+- name: app 1
+  description: blablabla 1
+  url: http://inwardmovement.fr/1
+
+- name: app 2
+  description: blablabla 2
+  url: http://inwardmovement.fr/2

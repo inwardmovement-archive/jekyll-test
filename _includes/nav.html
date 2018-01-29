@@ -1,0 +1,18 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link{% if page.url contains '/poems' %}{{ ' active' }}{% endif %}" href="{{ '/poems' | relative_url }}">Poems{% if page.url contains "/poems" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+          <a class="nav-item nav-link{% if page.url contains '/articles' %}{{ ' active' }}{% endif %}" href="{{ '/articles' | relative_url }}">Articles{% if page.url contains "/articles" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+          <a class="nav-item nav-link{% if page.url contains '/activism' %}{{ ' active' }}{% endif %}" href="{{ '/activism' | relative_url }}">Activism{% if page.url contains "/activism" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+        </div>
+        <div class="nav-right navbar-nav">
+          <a class="nav-item nav-link{% if page.url contains '/about' %}{{ ' active' }}{% endif %}" href="{{ '/about' | relative_url }}">About{% if page.url contains "/about" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
