@@ -6,16 +6,25 @@
             <div style="height: 38px;"><li class="page-item"><a class="page-link" href="{{ post.url }}">commencer la lecture</a></li></div>
           {% endfor %}
         {% else %}
-          {% if page.previous %}
-            <li class="page-item"><a class="page-link" href="{{ page.previous.url }}">précédent</a></li>
-          {% else %}
-            <li class="page-item disabled noselect"><a class="page-link" href="{{ page.previous.url }}">précédent</a></li>
-          {% endif %}
-          {% if page.next %}
-            <li class="page-item"><a class="page-link" href="{{ page.next.url }}">suivant</a></li>
-          {% else %}
-            <li class="page-item disabled noselect"><a class="page-link" href="{{ page.next.url }}">suivant</a></li>
-          {% endif %}
+          {% assign prev = "" %}
+          {% assign next = "" %}
+          {% assign stop = false %}
+          {% for post in site.posts%}
+            {% if post == page %}
+              {% assign stop = true %}
+            {% elsif post.categories == page.categories %}
+              {% if stop %}
+                {% assign prev = post.url %}
+                {% assign pTitle = post.title %}
+                {% break %}
+              {% else %}
+                {% assign next = post.url %}
+                {% assign nTitle = post.title %}
+              {% endif %}
+            {% endif %}
+          {% endfor%}
+          <li class="page-item{% if prev == '' %} disabled noselect{% endif %}"><a class="page-link" href="{{ prev }}">précédent</a></li>
+          <li class="page-item{% if next == '' %} disabled noselect{% endif %}"><a class="page-link" href="{{ next }}">suivant</a></li>
         {% endif %}
       </ul>
     </nav>
