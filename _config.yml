@@ -1,10 +1,10 @@
 title: Inward Movement
 description: Victor's personal website (writer, developer, activist)
 url: "https://inwardmovement.github.io/"
+permalink: /:categories/:title
 markdown: kramdown
 kramdown:
   hard_wrap: true
-permalink: /:categories/:title
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -14,20 +14,23 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: default
+      lang: en
   -
     scope:
-      path: "blog"
+      path: blog
     values:
-      layout: "blog"
+      layout: blog
+      lang: fr
   -
     scope:
-      path: "poems"
+      path: poems
     values:
-      layout: "poem"
+      layout: poem
+      lang: fr
   -
     scope:
-      path: "poems"
-      type: "pages"
+      path: poems
+      type: pages
     values:
-      layout: "recueil"
+      layout: recueil
