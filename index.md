@@ -1,6 +1,6 @@
 ---
-layout: home
 title: Hi =)
+layout: home
 ---
 I'm Victor from Lyon, France.
 

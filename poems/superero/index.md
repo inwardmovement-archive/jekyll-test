@@ -1,8 +1,7 @@
 ---
 title: SuperEro
-layout: recueil
 ---
-Ecrits entre 2011 et 2012. Principalement des poèmes amoureux et érotiques.  
+Ecrits entre 2011 et 2012. Principalement des poèmes amoureux et érotiques.
 <br>
 <blockquote class="blockquote text-right">
   <p><em>Il suffit d'avancer pour vivre<br>

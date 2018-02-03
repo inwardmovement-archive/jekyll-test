@@ -1,6 +1,5 @@
 ---
 title: Activism
-layout: default
 ---
 I am strongly involved in the [Algosphere Alliance](http://algosphere.org), a network dedicated to alleviating suffering through collaboration and political mobilization.
 

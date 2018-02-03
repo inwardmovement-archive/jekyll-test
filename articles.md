@@ -1,6 +1,5 @@
 ---
 title: Articles
-layout: default
 ---
 - [L’origine de tout](https://docs.google.com/document/d/1o0Bf5SUsPcHYUtSeTwmSKm2GCC31hcqop0JhFS6z0yw/edit)
 - [Les confusions courantes sur l'Enseignement du Bouddha](https://docs.google.com/document/d/1_L_qYyPRTQceE-X9mNxGmzVWstkkF5JYkfMvt_kneXI/edit)

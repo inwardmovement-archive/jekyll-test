@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About
 ---
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.

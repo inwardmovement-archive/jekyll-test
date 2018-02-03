@@ -1,6 +1,5 @@
 ---
 title: Blog
-layout: blog
 ---
 ##### lundi 18 janvier 2018
 
