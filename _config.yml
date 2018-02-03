@@ -18,9 +18,18 @@ defaults:
       lang: en
   -
     scope:
-      path: blog
+      path: index.md
     values:
-      layout: blog
+      layout: home
+  -
+    scope:
+      path: applications.md
+    values:
+      layout: applications
+  -
+    scope:
+      path: articles.md
+    values:
       lang: fr
   -
     scope:

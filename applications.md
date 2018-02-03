@@ -1,6 +1,5 @@
 ---
 title: Applications
-layout: applications
 ---
 <div class="grid-apps">
 
