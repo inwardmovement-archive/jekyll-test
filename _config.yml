@@ -23,11 +23,6 @@ defaults:
       layout: home
   -
     scope:
-      path: articles.md
-    values:
-      lang: fr
-  -
-    scope:
       path: poems
     values:
       layout: poem

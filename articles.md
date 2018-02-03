@@ -1,9 +1,0 @@
----
-title: Articles
----
-- [L’origine de tout](https://docs.google.com/document/d/1o0Bf5SUsPcHYUtSeTwmSKm2GCC31hcqop0JhFS6z0yw/edit)
-- [Les confusions courantes sur l'Enseignement du Bouddha](https://docs.google.com/document/d/1_L_qYyPRTQceE-X9mNxGmzVWstkkF5JYkfMvt_kneXI/edit)
-- [Le temps est une illusion](https://docs.google.com/document/d/1wVCScXV0YApQ6SFstxeT4E7gjaHR_XIuyV6YRA7baVY/edit)
-- [L'entrainement de l'esprit](https://docs.google.com/document/d/1cfpAgpZh2ZKhw8C0c4SOSYJJkUxhpRfGTWNHnEwsG-w/edit)
-- [L’amour centré sur les besoins](https://docs.google.com/document/d/1Q4a_WRxmSnnqnlSx1WvIvkIHqM90DybCPItHf8stzrQ/edit)
-- [L'expérience des graines](https://docs.google.com/document/d/1XE4mghFEfVtRJ6dCJHZljbAk0ZLLy_Ns9_qjxfK_CiM/edit)

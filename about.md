@@ -1,6 +1,8 @@
 ---
 title: About
 ---
+I'm Victor from Lyon, France. Writer, developer, activist.
+
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.
 
 I used to practice [Vipassana meditation](https://www.dhamma.org/) but can't anymore because of a [depersonalization-derealization syndrome](https://en.wikipedia.org/wiki/Depersonalization_disorder) 24/7 there's no treatment for yet. The cause of it is not clear to me, it might be a love breakup or a drug experiment.
@@ -17,6 +19,6 @@ I've reclaimed friendship as not excluding love nor intimacy. I see it as a subs
 
 I think learning to alleviate my own suffering is the most responsible thing I can do regarding society. I value holistic, systemic and long term vision, and find very inspiring to feel as a part from a whole and not dissociating a sentient being from another in the long run.
 
-I feel uncomfortable with social traditions and not involved in them. Fortunately I have lovely friends and family that bear with this.  
+I feel uncomfortable with social traditions and not involved in them. Fortunately I have lovely friends and family that bear with this.
 <br>
 <p class="text-center">You can write me at<br><code>victor.dhamma@gmail.com</code></p>
