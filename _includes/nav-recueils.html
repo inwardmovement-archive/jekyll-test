@@ -1,9 +1,9 @@
 <nav class="nav-recueils" aria-label="Collections navigation">
   <ul class="breadcrumb">
-    <li class="breadcrumb-item{% if page.url contains '/fleurspersistantes' %}{{ ' active' }}{% endif %}"><a href="{{ '/poems/fleurspersistantes' | relative_url }}">Fleurs persistantes{% if page.url contains "/fleurspersistantes" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
-    <li class="breadcrumb-item{% if page.url contains '/superero' %}{{ ' active' }}{% endif %}"><a href="{{ '/poems/superero' | relative_url }}">SuperEro{% if page.url contains "/superero" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
-    <li class="breadcrumb-item{% if page.url contains '/poudrearever' %}{{ ' active' }}{% endif %}"><a href="{{ '/poems/poudrearever' | relative_url }}">Poudre à rêver{% if page.url contains "/poudrearever" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
-    <li class="breadcrumb-item{% if page.url contains '/meditations' %}{{ ' active' }}{% endif %}"><a href="{{ '/poems/meditations' | relative_url }}">Méditations{% if page.url contains "/meditations" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
-    <li class="breadcrumb-item{% if page.url contains '/poemes' %}{{ ' active' }}{% endif %}"><a href="{{ '/poems/poemes' | relative_url }}">Poèmes{% if page.url contains "/poemes" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
+    {% for link in site.data.nav.recueils %}
+      {% assign link-url = link.title | slugify %}
+      {% assign link-url-folder = link-url | prepend: '/' | append: '/' %}
+      <li class="breadcrumb-item{% if page.url contains link-url-folder %}{{ ' active' }}{% endif %}"><a href="{{ link-url | prepend: 'poems/' | absolute_url }}/">{{ link.title }}{% if page.url contains link-url-folder %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a></li>
+    {% endfor %}
   </ul>
 </nav>
