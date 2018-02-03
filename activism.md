@@ -12,4 +12,4 @@ I am involved as being
 - a co-administrator of Algosphere Agency
 
 <br>
-[My LinkedIn profile](https://www.linkedin.com/in/inwardmovement/)
+You can [support me]()
