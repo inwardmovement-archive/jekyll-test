@@ -6,7 +6,6 @@ markdown: kramdown
 kramdown:
   hard_wrap: true
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 defaults:

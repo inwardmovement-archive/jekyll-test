@@ -5,6 +5,8 @@ Hosting: [GitHub](https://pages.github.com/)
 Code license: [MIT](https://choosealicense.com/licenses/mit/)  
 Content license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
+RSS: [All](https://inwardmovement.github.io/feeds/feed-all.xml) / [Poems](https://inwardmovement.github.io/feeds/feed-poems.xml) / [Articles](https://inwardmovement.github.io/feeds/feed-articles.xml) / [Articles en](https://inwardmovement.github.io/feeds/feed-articles-en.xml) / [Articles fr](https://inwardmovement.github.io/feeds/feed-articles-fr.xml)
+
 ---
 
 quand Jekyll 3.7 supporté par GitHub Pages :
