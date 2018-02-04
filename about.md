@@ -20,7 +20,8 @@ I've reclaimed friendship as not excluding love nor intimacy. I see it as a subs
 I think learning to alleviate my own suffering is the most responsible thing I can do regarding society. I value holistic, systemic and long term vision, and find very inspiring to feel as a part from a whole and not dissociating a sentient being from another in the long run.
 
 I feel uncomfortable with social traditions and not involved in them. Fortunately I have lovely friends and family that bear with this.
-<br>
+
+You can [support me]()
 <p class="text-center">You can write me at<br><code>victor.dhamma@gmail.com</code></p>
 <br>
 

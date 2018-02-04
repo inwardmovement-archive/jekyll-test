@@ -9,6 +9,3 @@ I am involved as being
 - a most active member of Communication Council
 - a most active member of Webteam
 - a co-administrator of Algosphere Agency
-<br>
-
-You can [support me]()
