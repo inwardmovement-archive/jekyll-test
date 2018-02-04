@@ -1,6 +1,7 @@
 title: Inward Movement
-description: Victor's personal website (writer, developer, activist)
-url: "https://inwardmovement.github.io/"
+description: Writer, developer, activist
+url: https://inwardmovement.github.io/
+author: Victor Massé
 permalink: /:categories/:title/
 markdown: kramdown
 kramdown:

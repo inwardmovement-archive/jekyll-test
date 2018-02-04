@@ -2,7 +2,7 @@
 title: About
 ---
 
-I'm Victor from Lyon, France. Writer, developer, activist.
+I'm Victor from Lyon, France. {{ site.description }}.
 
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.
 
@@ -22,7 +22,7 @@ I think learning to alleviate my own suffering is the most responsible thing I c
 
 I feel uncomfortable with social traditions and not involved in them. Fortunately I have lovely friends and family that bear with this.
 
-You can [support me]()
+You can [support me](https://www.paypal.me/inwardmovement)
 <p class="text-center">You can write me at<br><code>victor.dhamma@gmail.com</code></p>
 <br>
 
