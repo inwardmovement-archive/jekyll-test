@@ -1,6 +1,7 @@
 ---
 title: About
 ---
+
 I'm Victor from Lyon, France. Writer, developer, activist.
 
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.
