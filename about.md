@@ -22,9 +22,11 @@ I think learning to alleviate my own suffering is the most responsible thing I c
 
 I feel uncomfortable with social traditions and not involved in them. Fortunately I have lovely friends and family that bear with this.
 
-You can [support me](https://www.paypal.me/inwardmovement)
+You can <a href="#" data-toggle="modal" data-target="#modalDonation">support me</a>.
 <p class="text-center">You can write me at<br><code>victor.dhamma@gmail.com</code></p>
 <br>
 
 ---
 RSS: [All](https://inwardmovement.github.io/feeds/feed-all.xml) / [Poems](https://inwardmovement.github.io/feeds/feed-poems.xml) / [Articles](https://inwardmovement.github.io/feeds/feed-articles.xml) / [Articles en](https://inwardmovement.github.io/feeds/feed-articles-en.xml) / [Articles fr](https://inwardmovement.github.io/feeds/feed-articles-fr.xml)
+
+{% include modal-donation.html %}
