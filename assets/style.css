@@ -1,3 +1,6 @@
+/************************************************************
+ MISC
+ ***********************************************************/
 html {
   position: relative;
   min-height: 100%;
@@ -8,10 +11,26 @@ body {
   cursor: default;
 }
 
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/************************************************************
+ CONTAINER
+ ***********************************************************/
 main.container {
   max-width: 1140px;
   margin-bottom: 112px;
-  }
+}
 
 @media (min-width: 576px) {
   main.container {
@@ -31,18 +50,14 @@ main.container {
   }
 }
 
+/************************************************************
+ GRID
+ ***********************************************************/
 .grid-poems {
   display: grid;
   grid-template:
     "article"
     "aside";
-}
-
-@media (min-width: 992px) {
-  .grid-poems {
-    display: grid;
-    grid-template: "aside article" / 280px 1fr;
-  }
 }
 
 .grid-apps {
@@ -52,14 +67,19 @@ main.container {
 }
 
 @media (min-width: 768px) {
+  .grid-poems {
+    grid-template: "aside article" / 280px 1fr;
+  }
+
   .grid-apps {
-    display: grid;
-    grid-gap: 3rem;
     grid-template-columns: repeat(auto-fill, 300px);
     max-width: 1140px;
   }
 }
 
+/************************************************************
+ NAV
+ ***********************************************************/
 .navbar {
   margin-bottom: 56px;
 }
@@ -99,31 +119,16 @@ main.container {
 	padding-bottom: 10px;
 }
 
-nav.card .card-header ul {
-	list-style-type: none;
-}
-
+/************************************************************
+ SIDEBAR
+ ***********************************************************/
 .sidebar {
   grid-area: aside;
-}
-
-@media (min-width: 992px) {
-  .sidebar {
-    margin-top: 5px;
-  }
+  margin-top: 5px;
 }
 
 .sidebar .pagination {
   justify-content: center;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
 }
 
 .sidebar nav  {
@@ -145,32 +150,22 @@ nav.card .card-header ul {
   border-bottom: none;
 }
 
+nav.card .card-header ul {
+  list-style-type: none;
+}
+
 .sidebar .current {
 	border-bottom: 1px dotted;
 }
 
+/************************************************************
+ ARTICLE
+ ***********************************************************/
 article {
   grid-area: article;
-  max-width: 600px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: 768px) {
-  article {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .grid-poems article  {
-    margin-left: 100px;
-  }
-}
-
-.grid-poems article p {
-  margin-bottom: 1.25em;
 }
 
 article.home {
@@ -178,16 +173,35 @@ article.home {
   max-width: none;
 }
 
+.grid-poems article  {
+    margin: 0;
+  }
+
+.grid-poems article p {
+  margin-bottom: 1.25em;
+}
+
+@media (min-width: 650px) {
+  article {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 600px;
+  }
+}
+
 @media (min-width: 768px) {
+  .grid-poems article  {
+    margin-left: 100px;
+  }
+
   article.home {
     padding-top: 100px;
   }
 }
 
-a:focus, a:hover {
-  text-decoration: none;
-}
-
+/************************************************************
+ BLOCKQUOTE
+ ***********************************************************/
 .blockquote {
   font-size: inherit;
 }
@@ -205,10 +219,9 @@ a:focus, a:hover {
   font-style: normal;
 }
 
-#modalDonation {
-  padding-right: 0 !important;
-}
-
+/************************************************************
+ FOOTER
+ ***********************************************************/
 .nav-footer {
   position: absolute;
   bottom: 0;

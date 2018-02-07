@@ -1,0 +1,15 @@
+- name: app 1
+  description: blablabla 1
+  url: http://inwardmovement.fr/1
+
+- name: app 2
+  description: blablabla 2
+  url: http://inwardmovement.fr/2
+
+- name: app 3
+  description: blablabla 3
+  url: http://inwardmovement.fr/3
+
+- name: app 4
+  description: blablabla 4
+  url: http://inwardmovement.fr/4
