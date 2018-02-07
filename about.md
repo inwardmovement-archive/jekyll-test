@@ -27,6 +27,6 @@ You can <a href="#" data-toggle="modal" data-target="#modalDonation">support me<
 <br>
 
 ---
-RSS: [All](https://inwardmovement.github.io/feeds/feed-all.xml) / [Poems](https://inwardmovement.github.io/feeds/feed-poems.xml) / [Articles](https://inwardmovement.github.io/feeds/feed-articles.xml) / [Articles en](https://inwardmovement.github.io/feeds/feed-articles-en.xml) / [Articles fr](https://inwardmovement.github.io/feeds/feed-articles-fr.xml)
+RSS: <a href="{{ 'feeds/feed-all.xml' | relative_url }}">All</a> / <a href="{{ 'feeds/feed-poems.xml' | relative_url }}">Poems</a> / <a href="{{ 'feeds/feed-articles.xml' | relative_url }}">Articles</a> / <a href="{{ 'feeds/feed-articles-en.xml' | relative_url }}">Articles en</a> / <a href="{{ 'feeds/feed-articles-fr.xml' | relative_url }}">Articles fr</a> / <a href="{{ 'feeds/feed-blog.xml' | relative_url }}">Blog</a>
 
 {% include modal-donation.html %}

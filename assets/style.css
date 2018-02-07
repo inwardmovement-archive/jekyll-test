@@ -181,10 +181,15 @@ article.home {
   margin-bottom: 1.25em;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   article {
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+
+@media (min-width: 650px) {
+  article {
     max-width: 600px;
   }
 }

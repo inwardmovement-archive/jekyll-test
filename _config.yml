@@ -25,11 +25,30 @@ defaults:
     scope:
       path: poems
     values:
-      layout: poem
       lang: fr
+  -
+    scope:
+      path: poems
+      type: posts
+    values:
+      layout: poem
   -
     scope:
       path: poems
       type: pages
     values:
+      title: Poems
       layout: recueil
+  -
+    scope:
+      path: blog
+      type: posts
+    values:
+      layout: blog
+      permalink: /:categories/:year-:month-:day/
+  -
+    scope:
+      path: blog
+      type: pages
+    values:
+      title: Blog

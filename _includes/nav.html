@@ -5,18 +5,14 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <div class="navbar-nav mr-auto">
-          {% for link in site.data.nav.left %}
-            {% assign link-url = link.title | slugify %}
-            {% assign link-url-folder = link-url | prepend: '/' | append: '/' %}
-            <a class="nav-item nav-link{% if page.url contains link-url-folder %}{{ ' active' }}{% endif %}" href="{{ link-url | relative_url }}">{{ link.title }}{% if page.url contains link-url-folder %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
-          {% endfor %}
+          <a class="nav-item nav-link{% if page.url contains '/poems/' %}{{ ' active' }}{% endif %}" href="{{ 'poems/' | relative_url }}">Poems{% if page.url contains "/poems/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+          <a class="nav-item nav-link{% if page.url contains '/articles/' %}{{ ' active' }}{% endif %}" href="{{ 'articles/' | relative_url }}">Articles{% if page.url contains "/articles/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
+          <!-- <a class="nav-item nav-link{% if page.url contains '/applications/' %}{{ ' active' }}{% endif %}" href="{{ 'applications/' | relative_url }}">Applications{% if page.url contains "/applications/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a> -->
+          <!-- <a class="nav-item nav-link{% if page.url contains '/blog/' %}{{ ' active' }}{% endif %}" href="{{ 'blog/' | relative_url }}">Blog{% if page.url contains "/blog/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a> -->
+          <a class="nav-item nav-link{% if page.url contains '/activism/' %}{{ ' active' }}{% endif %}" href="{{ 'activism/' | relative_url }}">Activism{% if page.url contains "/activism/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
         </div>
         <div class="nav-right navbar-nav">
-          {% for link in site.data.nav.right %}
-            {% assign link-url = link.title | slugify %}
-            {% assign link-url-folder = link-url | prepend: '/' | append: '/' %}
-            <a class="nav-item nav-link{% if page.url contains link-url-folder %}{{ ' active' }}{% endif %}" href="{{ link-url | relative_url }}">{{ link.title }}{% if page.url contains link-url-folder %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
-          {% endfor %}
+          <a class="nav-item nav-link{% if page.url contains '/about/' %}{{ ' active' }}{% endif %}" href="{{ 'about/' | relative_url }}">About{% if page.url contains "/about/" %}{{ ' <span class="sr-only">(current)</span>'}}{% endif %}</a>
         </div>
       </div>
     </div>

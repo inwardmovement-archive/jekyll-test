@@ -1,3 +1,7 @@
+soon to come on GitHub
+
+---
+
 Backend: [Jekyll](https://jekyllrb.com/)  
 Frontend: [Bootstrap](http://getbootstrap.com/)  
 Hosting: [GitHub](https://pages.github.com/)  
@@ -7,5 +11,6 @@ Content license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-quand Jekyll 3.7 supporté par GitHub Pages :
-- `slugify: 'latin'` dans `nav.html` et `nav-recueils` + mettre à jour les noms de catégories [doc](https://jekyllrb.com/docs/templates/#options-for-the-slugify-filter)
+tester avec Hugo :
+- nom fichier = uniquement date
+- title = date (automatique)

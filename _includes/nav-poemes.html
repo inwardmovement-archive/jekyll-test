@@ -2,9 +2,8 @@
     <nav aria-label="Poems pagination">
       <ul class="pagination">
         {% if layout.recueil %}
-          {% for post in site.categories[include.nomrecueil] reversed offset:2 %}
+          {% assign post = site.categories[include.nomrecueil].last %}
             <div style="height: 38px;"><li class="page-item"><a class="page-link" href="{{ post.url }}">commencer la lecture</a></li></div>
-          {% endfor %}
         {% else %}
           {% assign prev = "" %}
           {% assign next = "" %}
@@ -15,11 +14,9 @@
             {% elsif post.categories == page.categories %}
               {% if stop %}
                 {% assign prev = post.url %}
-                {% assign pTitle = post.title %}
                 {% break %}
               {% else %}
                 {% assign next = post.url %}
-                {% assign nTitle = post.title %}
               {% endif %}
             {% endif %}
           {% endfor %}

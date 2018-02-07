@@ -1,0 +1,17 @@
+---
+
+---
+
+{% assign post = site.categories['blog'].first %}
+    <h5>{% include date-post-fr.html %}</h5>
+{{ post.content }}
+
+<br><br>
+<nav aria-label="Blog pagination">
+  <ul class="pagination justify-content-center">
+    {% for prevpost in site.categories['blog'] offset: 1 limit: 1 %}
+      <li class="page-item{% if prevpost == '' %} disabled noselect{% endif %}"><a class="page-link" href="{{ prevpost.url }}">précédent</a></li>
+      <li class="page-item disabled noselect"><a class="page-link" href="#">suivant</a></li>
+    {% endfor %}
+  </ul>
+</nav>

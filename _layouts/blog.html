@@ -1,0 +1,40 @@
+---
+layout: bare
+---
+
+<main class="container">
+  <article>
+    <h2>Blog</h2><br>
+    <h5>{% include date-page-fr.html %}</h5>
+    {{ content }}
+  </article>
+
+  <br><br>
+  <nav aria-label="Blog pagination">
+    <ul class="pagination justify-content-center">
+      {% assign first = site.categories['blog'].first %}
+      {% assign prev = "" %}
+      {% assign next = "" %}
+      {% assign stop = false %}
+      {% for post in site.posts %}
+       {% if post == page %}
+         {% assign stop = true %}
+       {% elsif post.categories == page.categories %}
+         {% if stop %}
+           {% assign prev = post.url %}
+           {% break %}
+         {% else %}
+           {% assign next = post.url %}
+         {% endif %}
+       {% endif %}
+      {% endfor %}
+      {% if next == first.url %}
+        {% capture next %}
+          {{ 'blog/' | relative_url }}
+        {% endcapture %}
+      {% endif %}
+        <li class="page-item{% if prev == '' %} disabled noselect{% endif %}"><a class="page-link" href="{{ prev }}">précédent</a></li>
+        <li class="page-item{% if next == '' %} disabled noselect{% endif %}"><a class="page-link" href="{{ next }}">suivant</a></li>
+    </ul>
+  </nav>
+</main>
