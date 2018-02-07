@@ -154,8 +154,10 @@ article {
   }
 }
 
-.grid-poems article  {
-  margin-left: 100px;
+@media (min-width: 768px) {
+  .grid-poems article  {
+    margin-left: 100px;
+  }
 }
 
 .grid-poems article p {
