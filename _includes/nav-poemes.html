@@ -31,11 +31,19 @@
 
   <nav class="card" aria-label="Poems navigation">
     <div class="card-header">
-      <ul>
-        {% for post in site.categories[include.nomrecueil] reversed %}
-          <li><a class="{% if page.url == post.url %}{{ 'current' }}{% endif %}" href="{{ post.url }}">{{ post.title }}{% if page.url == post.url %}{{ <span class="sr-only">(current)</span> }}{% endif %}</a></li>
-        {% endfor %}
-      </ul>
+      {% assign nomrecueil = include.nomrecueil %}
+        <ul>
+          {% for category in site.categories %}
+            {% assign catfirst = category | first %}
+            {% if nomrecueil contains catfirst %}
+              {% for poems in category %}
+                {% for post in poems reversed %}
+                  <li><a class="{% if page.url == post.url %}{{ 'current' }}{% endif %}" href="{{ post.url }}">{{ post.title }}{% if page.url == post.url %}{{ <span class="sr-only">(current)</span> }}{% endif %}</a></li>
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </ul>
     </div>
   </nav>
 </aside>
