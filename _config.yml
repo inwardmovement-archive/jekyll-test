@@ -9,6 +9,7 @@ kramdown:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-optional-front-matter
 defaults:
   -
     scope:
@@ -44,6 +45,7 @@ defaults:
       path: blog
       type: posts
     values:
+      title: Blog
       layout: blog
       permalink: /:categories/:year-:month-:day/
   -

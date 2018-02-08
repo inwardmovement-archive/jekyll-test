@@ -11,6 +11,7 @@ Content license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-tester avec Hugo :
-- nom fichier = uniquement date
-- title = date (automatique)
+en attente :
+- (test hugo) nom fichier = uniquement date
+- (test hugo) title = date (automatique)
+- passer en GFM quand hard_wrap supporté
