@@ -27,6 +27,6 @@ You can <a href="#" data-toggle="modal" data-target="#modalDonation">support me<
 <br>
 
 ---
-RSS: <a href="{{ 'feeds/all.xml' | relative_url }}">All</a> / <a href="{{ 'feeds/poems.xml' | relative_url }}">Poems</a> / <a href="{{ 'feeds/articles.xml' | relative_url }}">Articles</a> / <a href="{{ 'feeds/articles-en.xml' | relative_url }}">Articles en</a> / <a href="{{ 'feeds/articles-fr.xml' | relative_url }}">Articles fr</a> / <a href="{{ 'feeds/blog.xml' | relative_url }}">Blog</a>
+RSS: <a href="{{ 'feeds/all' | relative_url }}">All</a> / <a href="{{ 'feeds/poems' | relative_url }}">Poems</a> / <a href="{{ 'feeds/articles' | relative_url }}">Articles</a> / <a href="{{ 'feeds/articles-en' | relative_url }}">Articles en</a> / <a href="{{ 'feeds/articles-fr' | relative_url }}">Articles fr</a> / <a href="{{ 'feeds/blog' | relative_url }}">Blog</a>
 
 {% include modal-donation.html %}
