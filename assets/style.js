@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////////
+// MODAL
+/////////////////////////////////////////////////////////////
 $('#modalDonation')
   .on('show.bs.modal', function (e) {
     document.querySelector("html").style.overflow = "inherit";
@@ -5,3 +8,23 @@ $('#modalDonation')
   .on('hide.bs.modal', function (e) {
     document.querySelector("html").style.overflow = "initial";
   })
+
+/////////////////////////////////////////////////////////////
+// ANCHORS
+/////////////////////////////////////////////////////////////
+anchors.options = {
+  placement: 'left',
+  icon: ''
+};
+anchors.add('h3, h4, h5');
+
+/////////////////////////////////////////////////////////////
+// TOC
+/////////////////////////////////////////////////////////////
+tocbot.init({
+  tocSelector: '#toc',
+  contentSelector: 'article',
+  headingSelector: 'h3, h4, h5',
+  collapseDepth: 6,
+  activeLinkClass: '',
+});
