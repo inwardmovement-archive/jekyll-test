@@ -6,7 +6,7 @@ I'm Victor from Lyon, France. {{ site.description }}.
 
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.
 
-I used to practice [Vipassana meditation](https://www.dhamma.org/) but can't anymore because of a [depersonalization-derealization syndrome](https://en.wikipedia.org/wiki/Depersonalization_disorder) 24/7 there's no treatment for yet. The cause of it is not clear to me, it might be a love breakup or a drug experiment.
+I used to practice [Vipassana meditation](https://www.dhamma.org/) but can't anymore because of a [depersonalization-derealization syndrome](https://en.wikipedia.org/wiki/Depersonalization_disorder) 24/7 there's no treatment for yet. The cause of it is not clear to me.
 
 I like to create words in my poems and reuse metaphors across them.
 
