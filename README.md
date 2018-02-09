@@ -14,4 +14,4 @@ Content license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 en attente :
 - (test hugo) nom fichier = uniquement date
 - (test hugo) title = date (automatique)
-- passer en GFM quand hard_wrap supporté
+- passer en commonmak-ghpages (GFM) avec HARDBREAKS
