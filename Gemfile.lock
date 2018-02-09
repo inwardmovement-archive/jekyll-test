@@ -233,6 +233,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-commonmark-ghpages
   tzinfo-data
 
 BUNDLED WITH

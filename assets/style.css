@@ -173,13 +173,20 @@ nav.card .card-header ul {
   max-width: 300px;
   border: 1px solid #a2a9b1;
   background-color: #f8f9fa;
-  border-radius: .25rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  /*border-radius: .25rem;*/
+  margin-bottom: 1rem;
+  /*margin-top: 2rem;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.toc-list:first-child {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .toc-list {
-  margin-bottom: 1rem;
+  padding-right: 0;
+  padding-left: 2rem;
 }
 
 a.toc-link {

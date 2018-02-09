@@ -6,6 +6,10 @@ permalink: /:categories/:title/
 markdown: kramdown
 kramdown:
   hard_wrap: true
+# markdown: CommonMarkGhPages
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "tables"]
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -40,6 +44,12 @@ defaults:
     values:
       title: Poems
       layout: recueil
+  -
+    scope:
+      path: articles
+      type: posts
+    values:
+      layout: article
   -
     scope:
       path: blog

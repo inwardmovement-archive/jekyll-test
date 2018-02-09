@@ -16,7 +16,7 @@ anchors.options = {
   placement: 'left',
   icon: ''
 };
-anchors.add('h3, h4, h5');
+anchors.add('.anchors h3, .anchors h4, .anchors h5, .anchors h6');
 
 /////////////////////////////////////////////////////////////
 // TOC
@@ -24,7 +24,8 @@ anchors.add('h3, h4, h5');
 tocbot.init({
   tocSelector: '#toc',
   contentSelector: 'article',
-  headingSelector: 'h3, h4, h5',
+  headingSelector: '.anchors h3, .anchors h4, .anchors h5, .anchors h6',
   collapseDepth: 6,
   activeLinkClass: '',
+  ignoreSelector: '.toc-ignore',
 });

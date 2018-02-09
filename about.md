@@ -1,8 +1,8 @@
 ---
 title: About
 ---
-
-I'm Victor from Lyon, France. {{ site.description }}.
+~test barré~
+I'm Victor Massé from Lyon, France. {{ site.description }}.
 
 I like mind training, organization, strategy and analysis in regards to well-being and society vision.
 

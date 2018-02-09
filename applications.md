@@ -8,7 +8,7 @@ layout: applications
   {% for app in site.data.applications %}
 
   <div class="card">
-    <img class="card-img-top" src="" alt="Card image cap">
+    <img class="card-img-top" src="{{ '/assets/' | relative_url }}{{ app.img }}" alt="Card image cap">
     <div class="card-body">
       <h4 class="card-title">{{ app.name }}</h4>
       <p class="card-text">{{ app.description }}</p>
