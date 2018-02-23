@@ -3,13 +3,10 @@ description: Writer, developer, activist
 url: https://inwardmovement.github.io/
 author: Victor Massé
 permalink: /:categories/:title/
-markdown: kramdown
-kramdown:
-  hard_wrap: true
-# markdown: CommonMarkGhPages
-# commonmark:
-#   options: ["SMART", "FOOTNOTES"]
-#   extensions: ["strikethrough", "autolink", "tables"]
+markdown: CommonMarkGhPages
+commonmark:
+options: ["SMART", "FOOTNOTES", "HARDBREAKS"]
+extensions: ["strikethrough", "autolink", "table"]
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
